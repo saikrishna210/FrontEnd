@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass</title>
+</head>
+<body>
+     <style>
+    .header {
+      background-color: #e6eeff; 
+      text-align: center;
+      padding: 20px;
+      border-radius: 20px; 
+      width: 90%;
+      margin: auto;
+    }
+    .header h1 {
+      color: blue;
+      margin: 10px 0 5px 0;
+      font-size: 28px;
+    }
+    .header img {
+      width: 80px;
+      height: 80px;
+      display: block;
+      margin: auto;
+    }
+    .header h2 {
+      color: black;
+      margin: 5px 0;
+      font-size: 22px;
+    }
+  </style>
+</head>
+  <div class="header">
+    <img src="./images/tsrtc_logo" alt="tsrtc">
+    <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+    <h2>GENERAL BUS PASS APPLICATION</h2>
+  </div>
+    <fieldset>
+        <legend><h1 style="background-color: lightblue;">Applicant Details</h1></legend>
+        <form>
+          <table>
+                <tr>
+                       <td><label for="name">Name<sup style="color:red">*</sup></label>
+                        <input type="text" id="name" name="name"><br></td>
+                        <td><label for="name">Father's /Gaurdian's Name<sup style="color:red;">*</sup></label>
+                        <input type="text" id="name" name="name"><br></td>
+                </tr>
+                <tr>
+                       <td><label for="dob">Date of Birth<sup style="color:red">*</sup></label>
+                        <input type="date" id="dob" name="date"><br></td>
+                        <td><label for="">Gender<sup style="color: red;">*</sup></label>
+                       <input type="radio" id="male" name="gender" value="Male">
+                       <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label><br></td>
+                </tr>
+                <tr>
+                    
+                        <td><label for="num">Aadhaar No:</label>
+                        <input type="text" name="number" id="num" maxlength="12"><br></td>
+                        <td><label for="num">WhatsApp No<sup style="color: red;">*</sup></label>
+                        <input type="text" name="number" id="num" maxlength="10"><br></td>
+                </tr>
+                <tr>
+                    
+                        <td><label for="mail">E-mail id<sup style="color:red">*</sup></label>
+                        <input type="text" name="alphachar" id="mail"><br></td>
+                       <td><label for="choosen">Photo<sup style="color: red;">*</sup></label>
+                        <input type="file" name="text" id="choosen"><br></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+     <fieldset>
+        <legend><h1 style="background-color: lightblue;">Residental Address Details</h1></legend>
+        <form>
+        <table>
+            <tr>
+                    <td><label for="address">Applicant's Address<sup style="color: red;">*</sup></label>
+                    <textarea name="text" id="address" name="text"></textarea></td>
+                    <td><label for="cars">District<sup style="color: red;">*</sup></label>
+                    <select id="cars" name="text">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kphb">Kphb</option>
+                    </select></td>
+            </tr>
+            <tr>
+                    <td><lable for="names">Mandal<sup style="color: red;">*</sup></lable>
+                    <select name="text" id="names">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kphb">Kphb</option>
+                    </select></td>
+                    <td><label for="name">Village<sup style="color: red;">*</sup></label>
+                    <select name="text" id="name">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kphb">Kphb</option>
+                    </select></td>
+            </tr>
+            <tr>
+                    <td><label for="text">Pincode<sup style="color: red;">*</sup></label>
+                    <input type="num" name="name" id="text" maxlength="6"></td>
+            </tr>
+        </table>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><h1 style="background-color: lightblue;">Pass Type Details</h1></legend>
+            <label for="cities">City<sup style="color: red;">*</sup></label>
+            <select id="cities" name="address">
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kphb">Kphb</option>
+            </select><br>
+
+            <label for="pass">Pass type<sup style="color: red;">*</sup></label>
+            <select id="pass" name="text">
+            <option value="----Select----">----Select----</option>
+            <option value="GREATER PASS">GREATER PASS</option>
+            <option value="GENERAL ORDINARY ROUTE PASS">GENERAL ORDINARY ROUTE PASS</option>
+            <option value="GENERAL EXPRESS METRO ROUTE">GENERAL EXPRESS METRO ROUTE</option>
+            <option value="ORDINARY PASS">ORDINARY PASS</option>
+            <option value="METRO EXPRESS PASS">METRO EXPRESS PASS</option>
+            <option value="METRO DELUXE PASS">METRO DELUXE PASS</option>
+            </select><br>
+    </fieldset>
+    <fieldset>
+            <legend><h1 style="background-color: lightblue;">Mode Of Payment&Pass Collection</h1></legend>
+            <label for="payment">Payment Mode<sup style="color: red;">*</sup></label>
+            <select id="payment" name="text">
+            <option value="Select Payemnt Mode">Select Payment Mode</option>
+            <option value="Payment at Counter">Payment at Counter</option>
+            </select><br><br>
+
+            <label for="payment">Pass Delivery Mode<sup style="color: red;">*</sup></label>
+            <select id="payment" name="text">
+            <option value="Select pass delivery Mode">Select pass delivery Mode</option>
+            <option value="At Counter">At counter</option>
+            </select><br><br>
+
+            <label for="center">Center at which you want collect pass</label>
+            <select id="center" name="text">
+            <option value="----Select----">----Select----</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kphb">Kphb</option>
+        </select><br><br>
+    </fieldset>
+<center><img src="./images/Screenshot 2025-08-22 121743.png" width="150" height="40"></center>
+&nbsp;&nbsp;
+    <center><input type="text"></center>
+    &nbsp;&nbsp;
+   <center><input type="submit" value="submit"></center> 
+</body>
+</html>
